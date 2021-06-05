@@ -1,4 +1,4 @@
-"""Main module"""
+"""process_order_service main module"""
 from starlette.applications import Starlette
 from starlette.requests import Request
 from starlette.responses import JSONResponse
