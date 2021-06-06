@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  queue:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    
+  post_order_service:
+    build: ./post_order_service/
+    ports:
+      - "5000:5000"
+
+  process_order_service:
+    build: ./process_order_service/
+
